@@ -1,0 +1,575 @@
+# .gitignore for Community Learning Platform (FastAPI + Python)
+# Last Updated: 2025-02-07
+
+# ============================================================================
+# Python
+# ============================================================================
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+.codex/
+docs/
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+cover/
+
+# Translations
+*.mo
+*.pot
+
+# Django stuff (in case you add it later)
+*.log
+local_settings.py
+db.sqlite3
+db.sqlite3-journal
+
+# Flask stuff (if you add it)
+instance/
+.webassets-cache
+
+# Scrapy stuff
+.scrapy
+
+# Sphinx documentation
+docs/_build/
+
+# PyBuilder
+.pybuilder/
+target/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# IPython
+profile_default/
+ipython_config.py
+
+# pyenv
+.python-version
+
+# pipenv
+Pipfile.lock
+
+# poetry
+poetry.lock
+
+# pdm
+.pdm.toml
+
+# PEP 582
+__pypackages__/
+
+# Celery stuff
+celerybeat-schedule
+celerybeat.pid
+
+# SageMath parsed files
+*.sage.py
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Spyder project settings
+.spyderproject
+.spyproject
+
+# Rope project settings
+.ropeproject
+
+# mkdocs documentation
+/site
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Pyre type checker
+.pyre/
+
+# pytype static type analyzer
+.pytype/
+
+# Cython debug symbols
+cython_debug/
+
+# ============================================================================
+# FastAPI / Uvicorn Specific
+# ============================================================================
+
+# Uvicorn
+*.pid
+
+# ============================================================================
+# Database
+# ============================================================================
+
+# PostgreSQL
+*.pgsql
+*.sql
+*.dump
+*.backup
+
+# SQLite (for testing)
+*.db
+*.sqlite
+*.sqlite3
+test.db
+test.sqlite3
+
+# Database backups
+backups/
+*.bak
+
+# Alembic
+# Don't ignore alembic.ini or migrations folder, but ignore temp files
+alembic/versions/__pycache__/
+*.pyc
+
+# ============================================================================
+# Environment Variables & Secrets
+# ============================================================================
+
+# Environment files
+.env
+.env.local
+.env.development
+.env.test
+.env.production
+.env.staging
+*.env
+
+# Secret keys and configurations
+secrets/
+*.key
+*.pem
+*.cert
+*.crt
+*.p12
+*.pfx
+
+# AWS credentials
+.aws/
+
+# Google Cloud credentials
+*-credentials.json
+service-account*.json
+
+# ============================================================================
+# IDEs and Editors
+# ============================================================================
+
+# Visual Studio Code
+.vscode/
+*.code-workspace
+.history/
+
+# PyCharm
+.idea/
+*.iml
+*.iws
+*.ipr
+.idea_modules/
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Vim
+*.swp
+*.swo
+*~
+.vim/
+
+# Emacs
+*~
+\#*\#
+.\#*
+
+# Atom
+.atom/
+
+# JetBrains (comprehensive)
+.idea/
+*.iml
+out/
+.idea_modules/
+atlassian-ide-plugin.xml
+com_crashlytics_export_strings.xml
+crashlytics.properties
+crashlytics-build.properties
+fabric.properties
+
+# ============================================================================
+# Operating System Files
+# ============================================================================
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+._*
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+*.stackdump
+[Dd]esktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
+*.lnk
+
+# Linux
+*~
+.fuse_hidden*
+.directory
+.Trash-*
+.nfs*
+
+# ============================================================================
+# Project Specific
+# ============================================================================
+
+# Uploads directory (user-uploaded files)
+uploads/
+media/
+user-uploads/
+static/uploads/
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+
+# Logs
+logs/
+*.log
+*.log.*
+app.log
+error.log
+access.log
+debug.log
+
+# Cache
+cache/
+.cache/
+*.cache
+
+# Redis dump
+dump.rdb
+
+# ============================================================================
+# Testing
+# ============================================================================
+
+# Test coverage
+.coverage
+htmlcov/
+coverage/
+*.cover
+.hypothesis/
+.pytest_cache/
+
+# Test databases
+test_*.db
+test.sqlite3
+
+# Test outputs
+test-results/
+test-reports/
+
+# ============================================================================
+# Documentation
+# ============================================================================
+
+# Generated documentation
+docs/_build/
+docs/_static/
+docs/_templates/
+site/
+
+# ============================================================================
+# Docker
+# ============================================================================
+
+# Docker
+*.dockerignore
+docker-compose.override.yml
+.dockerignore
+
+# Docker volumes
+postgres-data/
+redis-data/
+
+# ============================================================================
+# CI/CD
+# ============================================================================
+
+# GitHub Actions
+.github/workflows/secrets/
+
+# CircleCI
+.circleci/config.local.yml
+
+# GitLab CI
+.gitlab-ci.local.yml
+
+# ============================================================================
+# Package Managers
+# ============================================================================
+
+# npm (if you add frontend later)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+yarn.lock
+
+# ============================================================================
+# Build Tools
+# ============================================================================
+
+# Webpack (if used)
+.webpack/
+
+# Parcel
+.parcel-cache/
+
+# Next.js (if used)
+.next/
+out/
+
+# ============================================================================
+# Monitoring & Analytics
+# ============================================================================
+
+# Sentry
+.sentryclirc
+
+# New Relic
+newrelic.ini
+
+# ============================================================================
+# Miscellaneous
+# ============================================================================
+
+# Backup files
+*.backup
+*.bak
+*.old
+*.orig
+
+# Compressed files (unless needed)
+*.zip
+*.tar
+*.tar.gz
+*.rar
+*.7z
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Editor swap files
+*.swp
+*.swo
+
+# Temporary Python files
+*.pyc
+*.pyo
+*.pyd
+
+# Local configuration overrides
+local_settings.py
+local_config.py
+config.local.py
+
+# Database migrations (only ignore if regenerating frequently during dev)
+# Uncomment if you regenerate migrations often
+# alembic/versions/*.py
+
+# ============================================================================
+# Security & Sensitive Data
+# ============================================================================
+
+# SSL certificates
+*.pem
+*.key
+*.crt
+*.csr
+
+# SSH keys
+id_rsa
+id_rsa.pub
+*.ppk
+
+# API keys and tokens
+.api_keys
+tokens.json
+
+# Password files
+passwords.txt
+*.password
+
+# ============================================================================
+# Development Tools
+# ============================================================================
+
+# Pre-commit
+.pre-commit-config.yaml.bak
+
+# Profiling
+*.prof
+*.lprof
+
+# Memory profiling
+*.mprof
+
+# Line profiler
+*.lprof
+
+# ============================================================================
+# Frontend (for Phase 2)
+# ============================================================================
+
+# React / Vue / Angular (uncomment when needed)
+# node_modules/
+# build/
+# dist/
+# .next/
+# .nuxt/
+# .vuepress/dist/
+# .serverless/
+# .fusebox/
+# .dynamodb/
+# .tern-port/
+# .vscode-test/
+# .yarn/cache/
+# .yarn/unplugged/
+# .yarn/build-state.yml
+# .yarn/install-state.gz
+# .pnp.*
+
+# ============================================================================
+# Notes
+# ============================================================================
+
+# Personal notes and TODO lists (optional)
+NOTES.md
+TODO.md
+SCRATCH.md
+notes/
+personal/
+
+# ============================================================================
+# Keep These Files (Exceptions)
+# ============================================================================
+
+# Keep example environment file
+!.env.example
+
+# Keep README files
+!README.md
+!*/README.md
+
+# Keep gitkeep files in otherwise empty directories
+!.gitkeep
+!**/.gitkeep
+
+# Keep migration files (Alembic)
+!alembic/versions/*.py
+!alembic/env.py
+!alembic/script.py.mako
+
+# Keep requirements files
+!requirements.txt
+!requirements-dev.txt
+!requirements-prod.txt
+
+# Keep Docker files
+!Dockerfile
+!docker-compose.yml
+!.dockerignore
+
+# Keep GitHub Actions workflows
+!.github/workflows/*.yml
+
+# Keep documentation
+!docs/*.md
+!docs/*.rst
+
+# ============================================================================
+# End of .gitignore
+# ============================================================================
