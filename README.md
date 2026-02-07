@@ -1,11 +1,14 @@
 # Community Learning Platform API
 
-A production-ready backend API for managing community-led technical learning.  
-The platform supports classes, sessions, enrollments, attendance tracking, announcements, Q&A discussions, and quarterly planning — designed for developer communities and technical education programs.
+`client.io` is a community learning platform built for managing community-led
+technical learning, including authentication/RBAC, classes and sessions,
+enrollment and attendance, announcements, Q&A discussions, and quarterly
+planning.
 
-Built with scalability, security, and collaboration in mind.
+**Tech Stack**: Python 3.12, FastAPI, PostgreSQL, SQLAlchemy (async), Alembic,
+Pydantic v2, JWT authentication, Docker, and Pytest.
 
----
+
 
 ## ✨ Features
 
@@ -19,11 +22,11 @@ Built with scalability, security, and collaboration in mind.
 - Fully documented API (OpenAPI/Swagger)
 - Dockerized local development
 
----
+
 
 ## 🛠 Tech Stack
 
-- **Python 3.11+**
+- **Python 3.12**
 - **FastAPI**
 - **PostgreSQL**
 - **SQLAlchemy (async)**
@@ -32,7 +35,6 @@ Built with scalability, security, and collaboration in mind.
 - **JWT Authentication**
 - **Docker & Docker Compose**
 - **Pytest**
-
 
 
 ## 🤝 Contributing
@@ -45,4 +47,4 @@ Contributions are welcome:
 
 ## 📌 License
 
-This project is licensed under the MIT License.
+This project is licensed under the MIT License. See [LICENSE](LICENSE).
